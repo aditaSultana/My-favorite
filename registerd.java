@@ -1,16 +1,21 @@
+import java.util.Scanner;
+
 public class registerd {
 
     public static void main(String[] args) {
-    int A = 30;
-    int B = 35;
 
-    int addition = A+B;
+        user user = new user();
 
-    int substraction = A-B;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter First number?");
+        int a = scanner.nextInt();
+        System.out.println("Enter Seconds number?");
+        int b = scanner.nextInt();
+        scanner.close();
 
-    System.out.println(addition);
+        System.out.println(user.getAdditionResult(a, b));
 
-    System.out.println(substraction);
-    
+        System.out.println(user.getSubstractResult(a, b));
+
     }
 }
