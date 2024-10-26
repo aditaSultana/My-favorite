@@ -6,6 +6,11 @@ public class registerd {
 
     int addition = A+B;
 
+    int substraction = A-B;
+
     System.out.println(addition);
+
+    System.out.println(substraction);
+    
     }
 }
